@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Define an alias for a drawable resource -->
+    <item type="drawable" name="event_background">@drawable/prof</item>
+
+    <!-- Define an alias for your dot icon -->
+    <item type="drawable" name="ic_event_dot">@drawable/calc</item>
+</resources>

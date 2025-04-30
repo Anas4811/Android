@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".CalculerMoyennesem3">
+
+        <!-- Stat Section -->
+        <TextView
+            android:id="@+id/Stat"
+            android:layout_width="279dp"
+            android:layout_height="88dp"
+            android:text="Stat"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.009"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/dsstat"
+            android:layout_width="302dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:hint="DS"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.642"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Stat" />
+
+        <!-- Data Mining Section -->
+
+        <!-- BIG DATA Section -->
+
+        <EditText
+            android:id="@+id/examenstat"
+            android:layout_width="297dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="32dp"
+            android:hint="Examen"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.636"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dsstat" />
+
+        <TextView
+            android:id="@+id/datamining"
+            android:layout_width="291dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="28dp"
+            android:text="Data mining"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/examenstat" />
+
+        <EditText
+            android:id="@+id/dsdatamining"
+            android:layout_width="272dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="72dp"
+            android:hint="DS"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.572"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/datamining" />
+
+        <EditText
+            android:id="@+id/examendatamining"
+            android:layout_width="248dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="32dp"
+            android:hint="Examen"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dsdatamining" />
+
+        <TextView
+            android:id="@+id/bigdata"
+            android:layout_width="276dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="52dp"
+            android:text="BIG DATA"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.062"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/examendatamining" />
+
+        <!-- Serveur cloud Section -->
+        <EditText
+            android:id="@+id/dsbigdata"
+            android:layout_width="267dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="96dp"
+            android:hint="DS"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.563"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bigdata" />
+
+        <EditText
+            android:id="@+id/examenbigdata"
+            android:layout_width="314dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="36dp"
+            android:hint="Examen"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.569"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dsbigdata" />
+
+        <TextView
+            android:id="@+id/serveurcloud"
+            android:layout_width="300dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="44dp"
+            android:text="Serveur cloud"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.032"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/examenbigdata" />
+
+        <EditText
+            android:id="@+id/dsserveurcloud"
+            android:layout_width="339dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="8dp"
+            android:hint="DS"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/serveurcloud" />
+
+        <EditText
+            android:id="@+id/examenserveurcloud"
+            android:layout_width="331dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="8dp"
+            android:hint="Examen"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dsserveurcloud" />
+
+        <!-- AI Section -->
+
+        <TextView
+            android:id="@+id/ai"
+            android:layout_width="335dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="24dp"
+            android:text="AI"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.01"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/examenserveurcloud" />
+
+        <EditText
+            android:id="@+id/dsai"
+            android:layout_width="323dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:hint="DS"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ai" />
+
+        <EditText
+            android:id="@+id/examenai"
+            android:layout_width="317dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="8dp"
+            android:hint="Examen"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dsai" />
+        <!-- Projet fédéré Section -->
+
+        <TextView
+            android:id="@+id/projetfedere"
+            android:layout_width="392dp"
+            android:layout_height="113dp"
+            android:layout_marginTop="24dp"
+            android:text="Projet fédéré"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.042"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/examenai" />
+
+        <EditText
+            android:id="@+id/ds1projetfedere"
+            android:layout_width="285dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:hint="DS1"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/projetfedere" />
+
+        <EditText
+            android:id="@+id/ds2projetfedere"
+            android:layout_width="298dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:hint="DS2"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ds1projetfedere" />
+
+        <EditText
+            android:id="@+id/ccprojetfedere"
+            android:layout_width="290dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:hint="CC"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ds2projetfedere" />
+
+        <!-- Droit Section -->
+
+        <TextView
+            android:id="@+id/droit"
+            android:layout_width="307dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="24dp"
+            android:text="Droit"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.009"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ccprojetfedere" />
+
+        <EditText
+            android:id="@+id/ds1droit"
+            android:layout_width="261dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="8dp"
+            android:hint="DS1"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/droit" />
+
+        <EditText
+            android:id="@+id/ds2droit"
+            android:layout_width="288dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="8dp"
+            android:hint="DS2"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ds1droit" />
+
+        <EditText
+            android:id="@+id/ccdroit"
+            android:layout_width="280dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="8dp"
+            android:hint="CC"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ds2droit" />
+
+        <!-- Gestion Section -->
+
+        <TextView
+            android:id="@+id/gestion"
+            android:layout_width="196dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="4dp"
+            android:text="Gestion"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.03"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ccdroit" />
+
+        <EditText
+            android:id="@+id/ds1gestion"
+            android:layout_width="211dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:hint="DS1"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gestion" />
+
+        <EditText
+            android:id="@+id/ds2gestion"
+            android:layout_width="208dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:hint="DS2"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ds1gestion" />
+
+        <EditText
+            android:id="@+id/ccgestion"
+            android:layout_width="211dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="8dp"
+            android:hint="CC"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ds2gestion" />
+
+        <!-- Mobile Section -->
+
+        <TextView
+            android:id="@+id/mobile"
+            android:layout_width="196dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="4dp"
+            android:text="Mobile"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.053"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ccgestion" />
+
+        <EditText
+            android:id="@+id/ds1mobile"
+            android:layout_width="219dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            android:hint="DS1"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/mobile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/ds2mobile"
+            android:layout_width="219dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            android:hint="DS2"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/ds1mobile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/ccmobile"
+            android:layout_width="219dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            android:hint="CC"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/ds2mobile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Web Section -->
+
+        <TextView
+            android:id="@+id/web"
+            android:layout_width="196dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="4dp"
+            android:text="Web"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.007"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ccmobile" />
+
+        <EditText
+            android:id="@+id/ds1web"
+            android:layout_width="219dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            android:hint="DS1"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/web"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/ds2web"
+            android:layout_width="205dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:hint="DS2"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ds1web" />
+
+        <EditText
+            android:id="@+id/ccweb"
+            android:layout_width="202dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:hint="CC"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ds2web" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="315dp"
+            android:layout_height="144dp"
+            android:layout_marginTop="3440dp"
+            android:text="Toute les informations sur les coeffecients sont deduites a partir du site de l'ISAMM"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.294"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4112dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/sem4" />
+
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="426dp"
+            android:layout_height="210dp"
+            android:layout_marginTop="3640dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/buttonsem3"
+            android:layout_width="354dp"
+            android:layout_height="201dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="51dp"
+            android:text="Calculer"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragmentContainer" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

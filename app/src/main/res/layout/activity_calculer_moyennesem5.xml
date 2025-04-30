@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".CalculerMoyennesem5">
+
+        <!-- Proba Section -->
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="196dp"
+            android:layout_height="64dp"
+            android:text="Entrepot des donnees"
+            android:textSize="25sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.009" />
+
+        <EditText
+            android:id="@+id/dsentrepot"
+            android:layout_width="219dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            android:hint="DS"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/textView7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.642" />
+
+        <EditText
+            android:id="@+id/examenentrepot"
+            android:layout_width="216dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="8dp"
+            android:hint="Examen"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/dsentrepot"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.63" />
+
+        <!-- TLA Section -->
+
+        <TextView
+            android:id="@+id/textViewVeille"
+            android:layout_width="196dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="204dp"
+            android:text="Technique de Veille"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.009"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/examenentrepot" />
+
+        <EditText
+            android:id="@+id/dsVeille"
+            android:layout_width="219dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="176dp"
+            android:hint="DS"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.009"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewVeille" />
+
+        <EditText
+            android:id="@+id/examenVeille"
+            android:layout_width="216dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="8dp"
+            android:hint="Examen"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/dsVeille"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Graph Section -->
+        <TextView
+            android:id="@+id/textViewNOSQL"
+            android:layout_width="196dp"
+            android:layout_height="64dp"
+            android:text="NOSQL"
+            android:textSize="25sp"
+            app:layout_constraintHorizontal_bias="0.009"
+
+            app:layout_constraintTop_toBottomOf="@id/examenVeille"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/dsNOSQL"
+            android:layout_width="219dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            android:hint="DS"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/textViewNOSQL"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/examenNOSQL"
+            android:layout_width="216dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="8dp"
+            android:hint="Examen"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/dsNOSQL"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- UML Section -->
+        <TextView
+            android:id="@+id/textViewaccesBD"
+            android:layout_width="196dp"
+            android:layout_height="64dp"
+            android:text="Controle d'access au Big Data"
+            android:textSize="25sp"
+            app:layout_constraintHorizontal_bias="0.009"
+
+            app:layout_constraintTop_toBottomOf="@id/examenNOSQL"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/dsaccessBD"
+            android:layout_width="219dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            android:hint="DS"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/textViewaccesBD"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/examenaccesBD"
+            android:layout_width="216dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="8dp"
+            android:hint="Examen"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/dsaccessBD"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Java Section -->
+        <TextView
+            android:id="@+id/textViewprevision"
+            android:layout_width="196dp"
+            android:layout_height="64dp"
+            android:text="Prevision"
+            android:textSize="25sp"
+            app:layout_constraintHorizontal_bias="0.009"
+
+            app:layout_constraintTop_toBottomOf="@id/examenaccesBD"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/dsprevision"
+            android:layout_width="219dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            android:hint="DS"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/textViewprevision"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/examenprevision"
+            android:layout_width="216dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="8dp"
+            android:hint="Examen"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintHorizontal_bias="0.009"
+
+            app:layout_constraintTop_toBottomOf="@id/dsprevision"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- BD Section -->
+        <TextView
+            android:id="@+id/textViewvis"
+            android:layout_width="196dp"
+            android:layout_height="64dp"
+            android:text="Visualisation des donnees"
+            android:textSize="25sp"
+            app:layout_constraintHorizontal_bias="0.009"
+
+            app:layout_constraintTop_toBottomOf="@id/examenprevision"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/dsvis"
+            android:layout_width="219dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            android:hint="DS"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/textViewvis"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/examenvis"
+            android:layout_width="216dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="8dp"
+            android:hint="Examen"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/dsvis"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Réseau Section -->
+        <TextView
+            android:id="@+id/textViewanglais4"
+            android:layout_width="196dp"
+            android:layout_height="64dp"
+            android:text="Anglais"
+            android:textSize="25sp"
+            app:layout_constraintHorizontal_bias="0.009"
+
+            app:layout_constraintTop_toBottomOf="@id/examenvis"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/dsanglais4"
+            android:layout_width="219dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            android:hint="DS"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/textViewanglais4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/examenanglais4"
+            android:layout_width="216dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="8dp"
+            android:hint="Examen"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/dsanglais4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <!-- Anglais Section -->
+        <TextView
+            android:id="@+id/textViewEntre"
+            android:layout_width="196dp"
+            android:layout_height="64dp"
+            android:text="Entreprenariat"
+            android:textSize="25dp"
+            app:layout_constraintTop_toBottomOf="@id/examenanglais4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.009" />
+
+        <EditText
+            android:id="@+id/ds1entre"
+            android:layout_width="219dp"
+            android:layout_height="65dp"
+            android:hint="DS1"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/textViewEntre"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.642" />
+
+        <EditText
+            android:id="@+id/ds2entre"
+            android:layout_width="219dp"
+            android:layout_height="65dp"
+            android:hint="DS2"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/ds1entre"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.642" />
+
+        <EditText
+            android:id="@+id/ccentre"
+            android:layout_width="219dp"
+            android:layout_height="65dp"
+            android:hint="CC"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/ds2entre"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.642" />
+
+        <!-- Gestion d'entreprise Section -->
+        <TextView
+            android:id="@+id/textViewframeworkweb"
+            android:layout_width="196dp"
+            android:layout_height="64dp"
+            android:text="framework web"
+            android:textSize="25dp"
+            app:layout_constraintTop_toBottomOf="@id/ccentre"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.009" />
+
+        <EditText
+            android:id="@+id/ds1frameworkweb"
+            android:layout_width="219dp"
+            android:layout_height="65dp"
+            android:hint="DS1"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/textViewframeworkweb"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.642" />
+
+        <EditText
+            android:id="@+id/ds2frameworkweb"
+            android:layout_width="219dp"
+            android:layout_height="65dp"
+            android:hint="DS2"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/ds1frameworkweb"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.642" />
+
+        <EditText
+            android:id="@+id/ccframeworkweb"
+            android:layout_width="219dp"
+            android:layout_height="65dp"
+            android:hint="CC"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/ds2frameworkweb"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.642" />
+
+        <!-- Sys Dis Section -->
+        <TextView
+            android:id="@+id/textViewApprentissageAutomatique"
+            android:layout_width="196dp"
+            android:layout_height="64dp"
+            android:text="ApprentissageAutomatique"
+            android:textSize="25dp"
+            app:layout_constraintTop_toBottomOf="@id/ccframeworkweb"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.009" />
+
+        <EditText
+            android:id="@+id/ds1ApprentissageAutomatique"
+            android:layout_width="219dp"
+            android:layout_height="65dp"
+            android:hint="DS1"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/textViewApprentissageAutomatique"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.642" />
+
+        <EditText
+            android:id="@+id/ds2ApprentissageAutomatique"
+            android:layout_width="219dp"
+            android:layout_height="65dp"
+            android:hint="DS2"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/ds1ApprentissageAutomatique"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.642" />
+
+        <EditText
+            android:id="@+id/ccApprentissageAutomatique"
+            android:layout_width="219dp"
+            android:layout_height="65dp"
+            android:hint="CC"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/ds2ApprentissageAutomatique"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.642" />
+
+
+        <Button
+            android:id="@+id/buttonsem3"
+            android:layout_width="257dp"
+            android:layout_height="109dp"
+            android:layout_marginTop="3012dp"
+
+            android:text="Calculer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.387"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="315dp"
+            android:layout_height="144dp"
+            android:layout_marginTop="3420dp"
+            android:text="Toute les informations sur les coeffecients sont deduites a partir du site de l'ISAMM"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.411"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3560dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/sem5" />
+
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="392dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="3136dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
