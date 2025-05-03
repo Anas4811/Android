@@ -18,17 +18,20 @@
         tools:replace="android:allowBackup"
         tools:targetApi="31">
         <activity
-            android:name=".CalculerMoyennesem5"
-            android:windowSoftInputMode="adjustResize"
+            android:name=".listeprof"
             android:exported="false" />
+        <activity
+            android:name=".CalculerMoyennesem5"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".CalculerMoyennesem4"
-            android:windowSoftInputMode="adjustResize"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".CalculerMoyennesem3"
-            android:windowSoftInputMode="adjustResize"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".calendrier_saisir"
             android:exported="false" />
@@ -40,16 +43,15 @@
             android:exported="false" />
         <activity
             android:name=".Activity2"
-
             android:exported="false" />
         <activity
             android:name=".ActivitySignIn"
-            android:windowSoftInputMode="adjustResize"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".MainActivity"
-            android:windowSoftInputMode="adjustResize"
-            android:exported="true">
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

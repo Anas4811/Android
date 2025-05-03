@@ -21,7 +21,7 @@ public class Activity2 extends AppCompatActivity {
         String username = intent2.getStringExtra("username");  // Retrieve the username
         String password = intent2.getStringExtra("password");
         int id=intent2.getIntExtra("studentId",-1);
-        Toast.makeText(getApplicationContext(),"Id : "+id,Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(),"Bienvenue : "+username,Toast.LENGTH_SHORT).show();
 
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
@@ -36,8 +36,8 @@ public class Activity2 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent i=getIntent();
-                setResult(RESULT_OK,i);
+                Intent i=new Intent(Activity2.this, MainActivity.class);
+                startActivity(i);
                 finish();
 
 

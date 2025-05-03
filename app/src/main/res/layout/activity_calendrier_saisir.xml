@@ -5,91 +5,92 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/big"
     tools:context=".calendrier_saisir">
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="253dp"
-        android:layout_height="47dp"
-        android:text="Saisir Le type de devoir dans le calendrier"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.594"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.266" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="259dp"
-        android:layout_height="324dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radio_group_white_background"
+        android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-
-        app:layout_constraintVertical_bias="0.601" >
+        app:layout_constraintVertical_bias="0.6">
 
         <RadioButton
-            android:id="@+id/radioButton4"
 
+            android:id="@+id/radioButton4"
+            style="@style/WhiteRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edittext"
             android:text="DS" />
 
         <RadioButton
             android:id="@+id/radioButton5"
+            style="@style/WhiteRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edittext"
             android:text="EXAMEN" />
 
         <RadioButton
             android:id="@+id/radioButton6"
+            style="@style/WhiteRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edittext"
             android:text="Projet" />
 
         <RadioButton
             android:id="@+id/radioButton7"
+            style="@style/WhiteRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edittext"
             android:text="Presentation" />
 
         <RadioButton
             android:id="@+id/radioButton8"
+            android:background="@drawable/edittext"
+            style="@style/WhiteRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:text="Evennement " />
-
+            android:text="Evennement" />
 
     </RadioGroup>
 
     <Button
         android:id="@+id/button2"
+        android:backgroundTint="#00BFCF"
         android:layout_width="244dp"
         android:layout_height="66dp"
-        android:text="Button"
+        android:text="Valider"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.562"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20sp"
         app:layout_constraintVertical_bias="0.92" />
 
     <ImageButton
         android:id="@+id/imageButton10"
-        android:layout_width="177dp"
-        android:layout_height="164dp"
+        android:layout_width="87dp"
+        android:layout_height="77dp"
+        android:background="@drawable/home1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintHorizontal_bias="0.009"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.008"
-        app:srcCompat="@drawable/home" />
+        app:layout_constraintVertical_bias="0.008" />
 </androidx.constraintlayout.widget.ConstraintLayout>

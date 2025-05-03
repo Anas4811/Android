@@ -44,8 +44,7 @@ public class calendrier_saisir extends AppCompatActivity {
                 Intent i = getIntent();
                 int id=i.getIntExtra("studentId",-1);
                 String date = i.getStringExtra("date");  // Date selected in the calendar activity
-                Toast.makeText(getApplicationContext(),"Id : "+id,Toast.LENGTH_SHORT).show();
-                Toast.makeText(getApplicationContext(),"date : "+date,Toast.LENGTH_SHORT).show();
+
 
                 // Add the homework event to the database
                 dbHelper.addHomework(description, date, id);

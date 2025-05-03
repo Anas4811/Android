@@ -5,6 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/data"
+
     tools:context=".CalculerMoyenne">
 
     <RadioGroup
@@ -21,36 +23,32 @@
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Semestre 3 (2eme Big Data semestre1)" />
+            android:background="@drawable/edittext"
+            android:text="Semestre 3 (2eme Big Data semestre1)"
+            android:textColor="#FFFFFF" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
+            android:textColor="#000000"
             android:layout_height="59dp"
+            android:background="@drawable/edittext"
             android:text="Semestre 4 (2eme Big Data semestre2)" />
 
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/edittext"
             android:text="Semestre 5 (3eme Big Data semestre1)" />
     </RadioGroup>
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="263dp"
-        android:layout_height="64dp"
-        android:text="Selectinner Votre Semestre"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.325" />
 
     <Button
         android:id="@+id/confirmer"
         android:layout_width="261dp"
         android:layout_height="57dp"
+        android:backgroundTint="#34B1BF"
         android:text="Confirmer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,13 +59,13 @@
 
     <ImageButton
         android:id="@+id/homeButton"
-        android:layout_width="104dp"
-        android:layout_height="100dp"
+        android:layout_width="94dp"
+        android:layout_height="85dp"
+        android:background="@drawable/dar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintHorizontal_bias="0.006"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04"
-        app:srcCompat="@drawable/home" />
+        app:layout_constraintVertical_bias="0.001" />
 </androidx.constraintlayout.widget.ConstraintLayout>

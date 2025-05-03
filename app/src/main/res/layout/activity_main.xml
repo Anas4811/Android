@@ -4,36 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp">
+    android:background="@drawable/bigdata"
+    android:padding="24dp"
+    tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/editTextUsername"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
-        android:backgroundTint="#FFFFFF"
+        android:background="@drawable/edittext"
         android:drawablePadding="10dp"
         android:hint="Username"
-        android:padding="12dp"
+        android:inputType="textEmailAddress"
+        android:padding="14dp"
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textColorHint="#DDDDDD"
+        android:textColorHint="#CCCCCC"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.196" />
 
     <EditText
         android:id="@+id/editTextPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:backgroundTint="#FFFFFF"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext"
         android:drawablePadding="10dp"
         android:hint="Password"
         android:inputType="textPassword"
-        android:padding="12dp"
+        android:padding="14dp"
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textColorHint="#DDDDDD"
+        android:textColorHint="#CCCCCC"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,44 +49,43 @@
         android:id="@+id/buttonLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#2196F3"
+        android:fontFamily="sans-serif-medium"
         android:text="Login"
-
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editTextPassword" />
 
-    <Button
-        android:id="@+id/signin"
-        android:layout_width="363dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="72dp"
-        android:text="Sign Up"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="213dp"
-        android:layout_height="57dp"
-        android:text="Don't have an account? "
-        app:layout_constraintBottom_toTopOf="@+id/signin"
+        android:layout_width="286dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="84dp"
+        android:text="Don't have an account?"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.849" />
+        app:layout_constraintTop_toBottomOf="@id/buttonLogin" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="191dp"
-        android:layout_height="69dp"
-        android:text="Bienvenue A l'application de Big Data!!"
-        app:layout_constraintBottom_toTopOf="@+id/editTextUsername"
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#43BF34"
+        android:fontFamily="sans-serif-medium"
+        android:text="Sign Up"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@id/textView5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

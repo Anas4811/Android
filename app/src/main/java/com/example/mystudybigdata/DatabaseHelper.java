@@ -6,11 +6,12 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.util.Log;
+import android.widget.Toast;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME    = "StudyApp.db";
-    private static final int    DATABASE_VERSION = 4;
+    private static final int    DATABASE_VERSION = 5;
 
     // Table: Students
     public static final String TABLE_STUDENTS   = "students";
@@ -74,14 +75,18 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
 
-        values.put(COL_NAME,        name);
-        values.put(COL_EMAIL,       email);
-        values.put(COL_PASSWORD,    password);
-        values.put(COL_BIRTHDAY,    birthday);
+        values.put(COL_NAME,name);
+        values.put(COL_EMAIL,email);
+        values.put(COL_PASSWORD,password);
+        values.put(COL_BIRTHDAY,birthday);
                // correct key
 
         long result = db.insert(TABLE_STUDENTS, null, values);
         db.close();
+        if(result==-1){
+            Log.d("CalendarDebug",
+                    "Error inserting homework. Description: ");
+        }
         return result != -1;
     }
 
