@@ -1,6 +1,7 @@
 package com.example.mystudybigdata;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -52,6 +53,21 @@ public class MainActivity extends AppCompatActivity {
                 Intent i = new Intent(MainActivity.this, ActivitySignIn.class);
                 startActivity(i);
                 finish();
+
+            }
+        });
+        Button contact=findViewById(R.id.button21);
+        contact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("mailto:")); // Important: leave this as just "mailto:" with no address
+                intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"anasbenhassine77@gmail.com", "ayarimalek13@gmail.com"});
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Subject here");
+                intent.putExtra(Intent.EXTRA_TEXT, "Body of the email");
+                startActivity(intent);
+
+
 
             }
         });

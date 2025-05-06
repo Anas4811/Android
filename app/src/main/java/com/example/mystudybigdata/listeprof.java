@@ -36,7 +36,7 @@ public class listeprof extends AppCompatActivity {
         //pour malek a modifier
         professors.add(new Professor("Salma Smaoui", "salma.smaoui@esct.uma.tn", "Java"));
         professors.add(new Professor("Imen Ouerghi", "imen.ouerghi@esct.uma.tn", "Proba"));
-        professors.add(new Professor("Ahmed Ben Hammouda", "ahmed.benhamouda@esct.uma.tn", "Java TP, PL/SQl"));
+        professors.add(new Professor("Ahmed Ben Hammouda", "ahmed.benhamouda@esct.uma.tn", "Java TP, PL/SQl,entrepot"));
         professors.add(new Professor("Houda Fekih", "houda.fekih@esct.uma.tn", "Conception UML"));
         professors.add(new Professor("Dalila Tayachi", "Dalila.tayachi@esct.uma.tn", "Graphe"));
         professors.add(new Professor("Olfa Belkahla", "olfa.belkahla@esct.uma.tn", "TLA"));
@@ -47,7 +47,7 @@ public class listeprof extends AppCompatActivity {
         professors.add(new Professor("Synda El Ghoul", "sinda.elghoul2@gmail.com", "Cloud"));
         professors.add(new Professor("Malek Ghenima", "malek.ghenima@gmail.com", "Gestion Informatisée"));
         professors.add(new Professor("Imen Ben Fradj", "imen.benfraj@esct.uma.tn", "P.Web"));
-        professors.add(new Professor("Nader Kolsi", "nader.kolsi@esct.uma.tn", ""));
+        professors.add(new Professor("Nader Kolsi", "nader.kolsi@esct.uma.tn", "Data Mining"));
         professors.add(new Professor("Chedi Becheikh-Ali", "chedi.bechikh@gmail.com", "Programmation Mobile"));
         professors.add(new Professor("Slim Hamrouni", "maitreslim@yahoo.fr", "Droit Informatisé"));
         professors.add(new Professor("Rebah Jlassi", "rebah.jlassi@esct.uma.tn", "Statistiques"));

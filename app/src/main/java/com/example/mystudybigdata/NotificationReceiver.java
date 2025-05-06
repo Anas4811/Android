@@ -17,8 +17,6 @@ public class NotificationReceiver extends BroadcastReceiver {
         String description = intent.getStringExtra("description");
 
         NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-
-        // Create notification channel for Android 8+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             String channelId = "homework_channel";
             CharSequence name = "Homework Notifications";

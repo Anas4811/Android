@@ -104,7 +104,6 @@ public class calendrier_saisir extends AppCompatActivity {
                 PendingIntent.FLAG_CANCEL_CURRENT | PendingIntent.FLAG_IMMUTABLE
         );
 
-        // 3) Get the AlarmManager
         AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
         if (alarmManager == null) {
             Log.w("AlarmSetup", "AlarmManager not available");
@@ -122,7 +121,6 @@ public class calendrier_saisir extends AppCompatActivity {
             }
         }
 
-        // 6) Schedule the alarm, catching SecurityException just in case
         try {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                 alarmManager.setExactAndAllowWhileIdle(
@@ -145,13 +143,11 @@ public class calendrier_saisir extends AppCompatActivity {
             }
         } catch (SecurityException e) {
             Log.e("AlarmSetup", "Failed to schedule exact alarm", e);
-            // Handle gracefully: maybe fall back or inform the user
         }
     }
 
 
 
-    // Method to parse the date from string (DD/MM/YYYY format) to Calendar object
     public Calendar parseDate(String dateStr) {
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");  // Specify the date format
         Calendar calendar = Calendar.getInstance();
