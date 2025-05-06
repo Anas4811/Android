@@ -94,13 +94,9 @@ public class calendrier_saisir extends AppCompatActivity {
         }
     }
 
-    // Method to set the notification for the specified due date and description
     public void setNotification(Calendar dueDate, String description) {
-        // 1) Build the Intent for your BroadcastReceiver
         Intent intent = new Intent(this, NotificationReceiver.class);
         intent.putExtra("description", description);
-
-        // 2) Create an immutable PendingIntent
         PendingIntent pendingIntent = PendingIntent.getBroadcast(
                 this,
                 0,
@@ -115,21 +111,13 @@ public class calendrier_saisir extends AppCompatActivity {
             return;
         }
 
-        // 4) Configure trigger time (9:00 AM on dueDate)
-        dueDate.set(Calendar.HOUR_OF_DAY, 9);
+        dueDate.set(Calendar.HOUR_OF_DAY, 8);
         dueDate.set(Calendar.MINUTE, 0);
         dueDate.set(Calendar.SECOND, 0);
         long triggerAtMillis = dueDate.getTimeInMillis();
-
-        // 5) On Android 12+ (S, API 31+) check if we can schedule exact alarms
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
             if (!alarmManager.canScheduleExactAlarms()) {
-                // You might prompt the user to grant the SCHEDULE_EXACT_ALARM permission,
-                // or fall back to a less‐precise API like setAlarmClock() or set()
                 Log.w("AlarmSetup", "Cannot schedule exact alarms—permission missing");
-                // Optional: notify user or redirect to settings:
-                // Intent permIntent = new Intent(Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM, Uri.parse("package:" + getPackageName()));
-                // startActivity(permIntent);
                 return;
             }
         }

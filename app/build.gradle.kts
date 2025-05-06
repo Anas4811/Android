@@ -29,11 +29,13 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
     implementation("nl.dionsegijn:konfetti-core:2.0.2")
-
     implementation(libs.konfetti)
     implementation(libs.material.calendar.view)
     implementation(libs.appcompat)

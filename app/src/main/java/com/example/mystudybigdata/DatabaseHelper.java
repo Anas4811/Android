@@ -151,5 +151,17 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         if (c != null) c.close();
         return -1;
     }
+    public boolean updateStudent(int id, String name, String email, String password, String birthday) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
 
+        values.put(COL_NAME, name);
+        values.put(COL_EMAIL, email);
+        values.put(COL_PASSWORD, password);
+        values.put(COL_BIRTHDAY, birthday);
+
+        int rowsAffected = db.update(TABLE_STUDENTS, values, COL_STUDENT_ID + " = ?", new String[]{String.valueOf(id)});
+        db.close();
+        return rowsAffected > 0;
+    }
 }

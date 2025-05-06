@@ -40,16 +40,28 @@ public class CalculerMoyenne extends AppCompatActivity {
                 }
                 if(sem==3){
                     Intent i = new Intent(CalculerMoyenne.this,CalculerMoyennesem3.class);
+                    int id=getIntent().getIntExtra("studentId",1);
+                    String username=getIntent().getStringExtra("username");
+                    i.putExtra("studentId",id);
+                    i.putExtra("username",username);
                     startActivity(i);
                     finish();
                 }
                 if(sem==4){
                     Intent i = new Intent(CalculerMoyenne.this,CalculerMoyennesem4.class);
+                    int id=getIntent().getIntExtra("studentId",1);
+                    String username=getIntent().getStringExtra("username");
+                    i.putExtra("studentId",id);
+                    i.putExtra("username",username);
                     startActivity(i);
                     finish();
                 }
                 if(sem==5){
                     Intent i = new Intent(CalculerMoyenne.this,CalculerMoyennesem5.class);
+                    int id=getIntent().getIntExtra("studentId",1);
+                    String username=getIntent().getStringExtra("username");
+                    i.putExtra("studentId",id);
+                    i.putExtra("username",username);
                     startActivity(i);
                     finish();
                 }
@@ -60,6 +72,10 @@ public class CalculerMoyenne extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent back=new Intent(CalculerMoyenne.this,Activity2.class);
+                int id=getIntent().getIntExtra("studentId",1);
+                String username=getIntent().getStringExtra("username");
+                back.putExtra("studentId",id);
+                back.putExtra("username",username);
                 startActivity(back);
                 finish();
             }

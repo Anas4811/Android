@@ -81,7 +81,7 @@ public class FragmentValidée extends Fragment {
         Bundle args = getArguments();
         if (args != null) {
             double result = args.getDouble("result", 0.0);
-            textViewResult.setText("Semestre Validée !!"+ result);
+            textViewResult.setText("Semestre validee \n"+ result);
         }
 
         return view;

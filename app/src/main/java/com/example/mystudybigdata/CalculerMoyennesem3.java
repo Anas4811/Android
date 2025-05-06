@@ -1,9 +1,11 @@
 package com.example.mystudybigdata;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -156,6 +158,20 @@ public class CalculerMoyennesem3 extends AppCompatActivity {
                             .addToBackStack(null)
                             .commit();
                     }
+            }
+        });
+
+        ImageButton retour = findViewById(R.id.home8);
+        retour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent back=new Intent(CalculerMoyennesem3.this,Activity2.class);
+                int id=getIntent().getIntExtra("studentId",1);
+                String username=getIntent().getStringExtra("username");
+                back.putExtra("studentId",id);
+                back.putExtra("username",username);
+                startActivity(back);
+                finish();
             }
         });
     }

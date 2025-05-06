@@ -76,6 +76,45 @@ public class Activity2 extends AppCompatActivity {
                 finish();
             }
         });
+        ImageButton prof=findViewById(R.id.imageButton8);
+        prof.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_prof=new Intent(Activity2.this, listeprof.class);
+                intent_prof.putExtra("username",username);  // Pass username from Activity2
+                intent_prof.putExtra("password",password);  // Pass password from Activity2
+                intent_prof.putExtra("studentId",id);
+                startActivity(intent_prof);
+            }
+        });
+        ImageButton cour=findViewById(R.id.imageButton7);
+        cour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_cour=new Intent(Activity2.this,voircour.class);
+                intent_cour.putExtra("username",username);  // Pass username from Activity2
+                intent_cour.putExtra("password",password);  // Pass password from Activity2
+                intent_cour.putExtra("studentId",id);
+                startActivity(intent_cour);
+                finish();
+            }
+
+        });
+        ImageButton seet=findViewById(R.id.set);
+
+        seet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent homeretour= new Intent(Activity2.this,mise.class);
+                int id = getIntent().getIntExtra("studentId",1);
+                String username = getIntent().getStringExtra("username");
+                homeretour.putExtra("studentId",id);
+                homeretour.putExtra("username",username);
+                startActivity(homeretour);
+                finish();
+            }
+        });
+
 
     }
 }

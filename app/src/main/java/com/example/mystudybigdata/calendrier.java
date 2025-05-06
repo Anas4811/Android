@@ -35,6 +35,7 @@ public class calendrier extends AppCompatActivity {
 
         Intent intent = getIntent();
         int studentId = intent.getIntExtra("studentId", -1);
+        String username=intent.getStringExtra("username");
         if (studentId < 0) {
             Toast.makeText(this, "Invalid student ID!", Toast.LENGTH_LONG).show();
             finish();
@@ -60,6 +61,7 @@ public class calendrier extends AppCompatActivity {
             } else {
                 Intent i = new Intent(calendrier.this, calendrier_saisir.class);
                 i.putExtra("studentId", studentId);
+                i.putExtra("username",username);
                 i.putExtra("date", selectedDate);
                 startActivityForResult(i, 2);
             }

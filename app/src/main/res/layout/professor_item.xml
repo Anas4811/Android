@@ -5,13 +5,14 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="8dp"
-    android:background="#e0e0e0"
+    android:background="#E3F2FD"
     android:layout_margin="4dp">
 
     <TextView
         android:id="@+id/professor_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#000000"
         android:text="Prof. Name"
         android:textStyle="bold"
         android:textSize="16sp"/>
@@ -20,6 +21,7 @@
         android:id="@+id/professor_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#000000"
         android:text="email@example.com"
         android:textSize="14sp"/>
     <TextView
@@ -27,5 +29,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="email@example.com"
+        android:textColor="#000000"
         android:textSize="14sp"/>
 </LinearLayout>
